@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>Etch a sketch</h1></div>
+        
+        
+        <div class="sidebar">
+            <button id="gridBtn" class="button menu" href="#">Choose grid</button>
+            <div id="gridForm">
+                <form id="form">
+                    <input type="text" class="form-control" id="square" placeholder="Grid size">
+                    <button type="submit">Ok</button>
+                    <p id="warning">Number must be &lt 100</p>
+                </form>
+            </div>
+            <button id="colorBtn" class="button menu" href="#">Choose color</button>
+            <div id="popupColor">
+                <form id="colorpick">
+                    <input type="color" id="colorpicker" value="#0000ff">
+                    <button type="button" id="closeColorpick">Ok</button>
+                </form>
+            </div>
+            <button id="colorDraw" class="button menu" href="#">Draw with selected color</button>
+            <button id="randomDraw" class="button menu" href="#">Draw with random color</button>
+            <button id="lightBtn" class="button menu" href="#">Lighten color</button>
+            <button id="darkBtn" class="button menu" href="#">Darken color</button></div>
+        <div id="grid-container"></div>
+        <div class="footer"><h3>Gwencorp - 2023</h3></div>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>

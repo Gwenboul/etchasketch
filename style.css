@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    display: grid;
+    margin: auto;
+    width: 70%;
+    height: 100%;
+    grid-template-areas: "header header header header"
+    "left right right right"
+    "footer footer footer footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 1fr 50px;
+  }
+  
+  .header {
+    grid-area: header;
+    /* text-align: center; */
+    background: #2e2e2e;
+    color: #c7c7c7;
+    line-height : 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .sidebar {
+    grid-area: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #494949;
+  }
+
+  .menu{
+    background: #2e2e2e;
+    border-style: solid;
+    border-color: #4b4b4b #161616 #161616 #4b4b4b;
+    color: #c7c7c7;
+    width: 60%;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#gridForm{
+    display: none;
+    background: #636363;
+    border-style: solid;
+    border-color: #868686 #444444 #444444 #868686;
+    color: #c7c7c7;
+    width: 50%;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#form { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  } 
+
+#form > input{
+    width:80px;
+    border-radius: 5px;
+    text-align: center;
+}  
+#form > p{
+    color: rgb(214, 214, 214);
+    display: none;
+    text-align: center;
+    font-size: small;
+}
+
+#popupColor{
+    display: none;
+    background: #636363;
+    border-style: solid;
+    border-color: #868686 #444444 #444444 #868686;
+    color: #c7c7c7;
+    width: 55%;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#colorpick{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#colorpicker{
+    border: none;
+    background-color: #636363;
+    border-radius: 2px;
+}
+
+#closeColorpick{
+    display: block;
+}
+
+button{
+    background: #2e2e2e;
+    border-style: solid;
+    border-color: #4b4b4b #161616 #161616 #4b4b4b;
+    color: #c7c7c7;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+  #grid-container {
+    grid-area: right;
+    display: grid;
+    gap: 2px;
+    width: 100%;
+    /* max-width: 840px; */
+    margin-inline: auto;
+    background-color: #e4e4be;
+  }
+
+  #grid-container div {
+    aspect-ratio: 1/1;
+    overflow: auto;
+    background-color: #ffffe5;
+    /* transition: ease 3s all; */
+  }
+
+  .footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2e2e2e;
+    color: #c7c7c7;
+  }
